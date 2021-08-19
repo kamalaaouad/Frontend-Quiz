@@ -15,5 +15,8 @@ class QuizDataService{
     deleteQuizById(id){
         return http.delete(`/quiz/deleteQuiz/${id}`);
     }
+    updateQuiz(id,data){
+        return http.put(`/quiz/updateQuiz/${id}`,data);
+    }
 }
 export default new QuizDataService();

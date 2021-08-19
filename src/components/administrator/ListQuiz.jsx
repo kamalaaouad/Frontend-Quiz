@@ -51,7 +51,7 @@ function ListQuiz() {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {allQuiz && allQuiz.sort((a,b)=>a.TimeM > b.TimeM ? 1:-1).map((quiz) => (
+                                        {allQuiz && allQuiz.map((quiz) => (
                                             <tr key={quiz.id}>
                                                 <td>
                                                     <img src={logo} alt="" />

@@ -116,7 +116,7 @@ function ModalQuestion(props) {
                                         <input className="option" type="text" name={"answerContent"}
                                             onChange={(e) => handleChangeAnswer(e, index)}
                                             // value={item.option_1}
-                                            placeholder="Option №1" required  />
+                                            placeholder={"Option №"+parseInt(index)+1} required  />
                                     </div>
                                 );
                             })}

@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
-import Admin from './components/administrator/Admin';
+import App from './App';
+// import Admin from './components/administrator/Admin';
 // import QuizWithQuestion from './components/quiz/QuizWithQuestion';
 import reportWebVitals from './reportWebVitals';
+// import Test from './Test';
 
 ReactDOM.render(
   // <React.StrictMode>
-    <Admin />
+    <App />
   // </React.StrictMode>
   ,
   document.getElementById('root')

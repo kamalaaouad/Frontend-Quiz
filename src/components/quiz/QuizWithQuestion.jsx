@@ -43,7 +43,7 @@ function QuizWithQuestion(props) {
                                 item.answers.map((itm) => (
 
                                     <div key={itm.id}>
-                                        <input type="checkbox" name="box" id="one" checked={itm.correct ? true:false}/>
+                                        <input style={{ display: 'none' }} type="checkbox" name="box" id="one" defaultChecked={itm.correct ? true:false}/>
     
                                         <label htmlFor="one" className="box first">
                                             <div className="course">

@@ -60,9 +60,9 @@ label.box .circle {
     display: inline-block
 }
 
-input[type="checkbox"] {
+/* input[type="checkbox"] {
     display: none
-}
+} */
 
 .btn.btn-primary {
     border-radius: 25px;
