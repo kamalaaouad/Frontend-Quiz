@@ -38,7 +38,7 @@ function ModalQuiz(props) {
             <div ref={nodeRef}>
                 <Modal show={props.showQz}>
                     <Modal.Header>
-                        Modal Head Part
+                        Create Quiz
                     </Modal.Header>
                     <Modal.Body>
 

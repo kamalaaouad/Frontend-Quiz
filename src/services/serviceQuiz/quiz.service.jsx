@@ -18,5 +18,8 @@ class QuizDataService{
     updateQuiz(id,data){
         return http.put(`/quiz/updateQuiz/${id}`,data);
     }
+    Score(id,data){
+        return http.post(`/quiz/CalculateScoreByQuiz/${id}`,data);
+    }
 }
 export default new QuizDataService();

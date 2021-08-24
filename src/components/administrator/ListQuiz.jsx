@@ -55,14 +55,14 @@ function ListQuiz() {
                                             <tr key={quiz.id}>
                                                 <td>
                                                     <img src={logo} alt="" />
-                                                    <a href={"/quiz/"+quiz.id} className="user-link" >{quiz.title}</a>
+                                                    <a href={"/admin/quiz/"+quiz.id} className="user-link" >{quiz.title}</a>
                                                     <span className="user-subhead"><i style={{ color:'#c080ff' }}>Identifiant ::</i> {quiz.id}</span>
                                                 </td>
                                                 <td>
                                                    {quiz.questions.length} {quiz.questions.length >= 2 ? 'Questions':'Question'}
                                                 </td>
                                                 <td style={{ width: '20%' }}>
-                                                    <a href={'/editquiz/'+quiz.id} className="table-link">
+                                                    <a href={'/admin/editquiz/'+quiz.id} className="table-link">
                                                         <span className="fa-stack">
                                                             <i className="fa fa-square fa-stack-2x"></i>
                                                             <i className="fa fa-pencil fa-stack-1x fa-inverse"></i>

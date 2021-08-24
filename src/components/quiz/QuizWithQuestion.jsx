@@ -76,7 +76,7 @@ function QuizWithQuestion(props) {
                     </Toast>
                   </div>)}
                     <div className="col-12">
-                        <div className="d-flex justify-content-center"> <button onClick={()=>{window.location.replace('/');}} className="btn btn-primary px-4 py-2 fw-bold"> Go Back</button> </div>
+                        <div className="d-flex justify-content-center"> <button onClick={()=>{window.location.replace('/admin');}} className="btn btn-primary px-4 py-2 fw-bold"> Go Back</button> </div>
                     </div>
                 </div>
             </div>

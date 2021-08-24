@@ -37,9 +37,13 @@ function Home() {
     return (
         <div>
             <>
-                <div className="login-dark" style={{ height: "695px" }}>
+                <div className="login-dark" 
+                style={{ height: "720px" }}
+                >
                     <div className="form">
-                        <h2 style={{ textAlign: "center" }}>Quiz</h2>
+                        <h2 
+                        style={{ textAlign: "center" }}
+                        >Quiz</h2>
                         <div className="form-group">
                             <select className="form-control-select" onChange={handleGetQuiz} defaultValue={'DEFAULT'} >
                                 <option value="DEFAULT"  disabled hidden>
@@ -53,7 +57,7 @@ function Home() {
                         <div className="form-group"><input className="form-control" type="text" name="username" placeholder="UserName" onChange={(e)=>handleChangeUseName(e)} /></div>
                         <div className="form-group"><button className="btn btn-primary btn-block form-control" onClick={()=>handleStartQuiz()}> Start Quiz</button></div>
                         <div>
-                            <a className="forgot" href="/#">Are You Admin ?</a>
+                            <a className="forgot" href="/admin">Are You Admin ?</a>
                         </div>
 
                     </div>

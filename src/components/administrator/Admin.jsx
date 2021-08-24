@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import './Admin.css';
+// import './Admin.css';
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,7 +24,7 @@ function Admin() {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href='/admin'>
                         <img src={logo} className="App-logo" alt="logo" width="30" height="24" />
                         Admin</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -51,7 +51,7 @@ function Admin() {
                             <div className="collapse navbar-collapse ">
                                 <ul className="flex-md-column flex-row navbar-nav w-100 justify-content-between">
                                     <li className="nav-item">
-                                        <a className="nav-link pl-0 text-nowrap" href='/'><i className="fa fa-bullseye fa-fw"></i> <span className="font-weight-bold">Quiz_Admin</span></a>
+                                        <a className="nav-link pl-0 text-nowrap" href='/admin'><i className="fa fa-bullseye fa-fw"></i> <span className="font-weight-bold">Quiz_Admin</span></a>
                                     </li>
                                     {/* <li className="nav-item">
                                         <a className="nav-link pl-0" href='/#'><i className="fa fa-book fa-fw"></i> <span className="d-none d-md-inline">Link</span></a>
@@ -59,12 +59,12 @@ function Admin() {
                                     <li className="nav-item">
                                         <a className="nav-link pl-0"
                                         onClick={()=>{showModalQz()}}
-                                         href='/#'><i className="fa fa-flag"></i> <span className="d-none d-md-inline">ADD QUIZ</span></a>
+                                         href='#'><i className="fa fa-flag"></i> <span className="d-none d-md-inline">ADD QUIZ</span></a>
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link pl-0"
                                          onClick={()=>{showModalQt()}}
-                                         href='/#'><i className="fa fa-cogs"></i> <span className="d-none d-md-inline">ADD QUESTION</span></a>
+                                         href='#'><i className="fa fa-cogs"></i> <span className="d-none d-md-inline">ADD QUESTION</span></a>
                                     </li>
                                     {/* <li className="nav-item">
                                         <a className="nav-link pl-0" href='/#'><i className="fa fa-cog fa-fw"></i> <span className="d-none d-md-inline">Link</span></a>
@@ -86,17 +86,16 @@ function Admin() {
                         <ModalQuiz
                             onCloseQz={(e)=>showModalQz(e)}
                             showQz={showQz}
-                        />
+                        /> 
                         <ModalQuestion
                         onCloseQt={(e)=>showModalQt(e)}
                         showQt={showQt}
                         />
-                        {/* <EditQuiz/> */}
                         <BrowserRouter>
                         <Switch>
-                            <Route path="/" component={ListQuiz} exact/>
-                            <Route path="/quiz/:id" component={QuizWithQuestion}/> 
-                            <Route path="/editquiz/:id" component={EditQuiz}/> 
+                            <Route path="/admin" component={ListQuiz} exact/> 
+                             <Route path="/admin/quiz/:id" component={QuizWithQuestion}/>  
+                            <Route path="/admin/editquiz/:id" component={EditQuiz}/> 
                         </Switch>
                         </BrowserRouter>
                     </main>

@@ -1,7 +1,7 @@
-body{
+/* body{
     background-color: #fff;
     height: 100%;
-}
+}*/
 
 .navbar>.container {
     display: inline-block;
@@ -18,9 +18,9 @@ body{
 }
 
 .collapse {
-    margin-left: 90px;
+    margin-left: 100px;
 }
-
+/*
 #sidebar {
     position: fixed;
     top: 50px;
@@ -150,32 +150,32 @@ body{
   --primary-color: #0D6FFA;
   
   width:100%;
-}
+} */
 
 /* ------------------------- */
-:root{
+/* :root{
   --primary-color: #2BB24C;
   --text-color: rgba(0,0,0,0.65);
   --light-color: #ffffff;
   --elevation-1: 0px 1px 4px rgba(0, 0, 0, 0.08), 0px 1px 2px rgba(0, 0, 0, 0.12);
   --elevation-2: 0px 2px 8px rgba(0, 0, 0, 0.08), 0px 2px 4px rgba(0, 0, 0, 0.12);
   --elevation-3: 0px 3px 12px rgba(0, 0, 0, 0.08), 0px 3px 6px rgba(0, 0, 0, 0.12);
-}
+} */
 
-body{  
+/* body{  
   font-family: "Roboto",sans-serif;
   color: var(--text-color);
    background-color: #CBD3F1;
-}
-.as-container{
+} */
+/* .as-container{
   display:flex;
   
   height:100%;
   justify-content:center;
   align-items:center;
   padding-top: 20px;
-}
-.as-choice-card{
+} */
+/* .as-choice-card{
   position:relative;
   display:flex;
   
@@ -259,4 +259,4 @@ body{
 .page-header {
   margin-top: 120px;
 }
-
+ */
