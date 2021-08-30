@@ -68,7 +68,7 @@ function ListQuiz() {
                                                             <i className="fa fa-pencil fa-stack-1x fa-inverse"></i>
                                                         </span>
                                                     </a>
-                                                    <a href='/#' onClick={()=>handleRemoveQuiz(quiz.id)} className="table-link danger">
+                                                    <a href='/admin' onClick={()=>handleRemoveQuiz(quiz.id)} className="table-link danger">
                                                         <span className="fa-stack">
                                                             <i className="fa fa-square fa-stack-2x"></i>
                                                             <i className="fa fa-trash-o fa-stack-1x fa-inverse"></i>

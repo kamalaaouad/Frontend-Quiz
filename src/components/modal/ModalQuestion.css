@@ -19,7 +19,7 @@ input[name="question"]{
 }
 
 .option input[type=button] {
-    background-color: #4CAF50;
+    background-color: #9ec59f !important;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -37,12 +37,10 @@ input[name="question"]{
 	width: 40px;
 	height: 40px;
 }
-
 .checkbox-section {
 	display: flex;
 	flex-direction: column;
-	/* margin-top: 60px; */
-	margin-left: 10px;
+	margin-left: 20px;
 }
 .question-section {
 	display: flex;
